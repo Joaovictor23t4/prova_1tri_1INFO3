@@ -1,17 +1,9 @@
+<meta charset="UTF-8">
+
 <script>
-    /*
-    PROBLEMA: Média anual
-    Peça para o aluno informar as notas obtidas nos três trimestres.
-    Calcule a média que o aluno obteve durante o ano letivo.
-    Apresente a média final que o aluno obteve.
-    */
-
-    //ENTRADA
-
-
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+    const primeiro = Number(prompt(`Informe sua média do primeiro trimestre`).replace("," , "."));
+    const segundo = Number(prompt(`Informe sua média do segundo trimestre`).replace("," , "."));
+    const terceiro = Number(prompt(`Informe sua média do terceiro trimestre`).replace("," , "."));
+    const mediaFinal = (primeiro + segundo + terceiro) / 3;
+    document.write (`A sua média final será de ${mediaFinal.toFixed(1).replace("." , ",")}`);
 </script>

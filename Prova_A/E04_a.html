@@ -1,17 +1,9 @@
+<meta charset="UTF-8">
+
 <script>
-    /*
-    PROBLEMA: Reajuste (Inflação)
-    A inflação no país está alta, algo em torno de 5,3% ao ano.
-    Peça para o usuário informar o seu salário atual e calcule qual deverá ser o novo salário após o reajuste da inflação.
-    Apresente o resultado para o usuário.
-    */
+    const salarioAntes = Number(prompt(`Informe o seu salário antes da inflação`).replace("," , "."));
 
-    //ENTRADA
+    const salarioReajustado = salarioAntes + (salarioAntes * 0.053);
 
-
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+    document.write(`O seu salário após o reajuste da inflação será de R$${salarioReajustado.toFixed(2).replace("." , ",")}`);
 </script>

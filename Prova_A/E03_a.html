@@ -1,18 +1,13 @@
+<meta charset="UTF-8">
+
 <script>
-    /*
-    PROBLEMA: Média ponderada
-    O aluno realizou três atividades avaliativas durante o semestre do seu curso de graduação.
-    Cada atividade tinha um peso específico, valendo, respectivamente, 1, 2 e 7.
-    Peça para o aluno informar as notas que obteve em cada atividade avaliativa.
-    Calcule e apresente a média semestral do aluno.
-    */
+    const primeira = Number(prompt(`Informe a nota da sua primeira avaliação`).replace("," , "."));
 
-    //ENTRADA
+    const segunda = Number(prompt(`Informe a nota da sua segunda avaliação`).replace("," , "."));
 
+    const terceira = Number(prompt(`Informe a nota da sua terceira avaliação`).replace("," , "."));
 
-    //PROCESSAMENTO
+    const media = (primeira * 1 + segunda * 2 + terceira * 7) / 10
 
-
-    //SAÍDA
-
+    document.write(`A sua média semestral será ${media.toFixed(1).replace("." , ",")}`);
 </script>
